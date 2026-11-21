@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+.app-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+.app-header{
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+.app-header h1{
+    margin: 0;
+    font-size: 2rem;
+}
+.app-header p{
+    margin-top: 8px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.top-section, .bottom-section{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 20px;
+
+}
+.card{
+    background: #020617;
+    padding: 16px 18px 18px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+}
+.card h2{
+    margin: 0 0 12px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form input, .form button {
+    padding: 10px 12px; 
+    font-size: 0.95rem;
+    border:1px solid #1f2937;
+    outline: none;
+}
+.form input{
+    background-color: #020617;
+    color: #e5e7eb;
+}
+.form input::placeholder{
+    color: #6b7280;
+}
+
+.form input:focus{
+    background-color: #38dbf8;
+}
+.stats-grid{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.stats-item{
+    background: #020617;
+    border-radius: 10px;
+    padding: 10px;
+    border: rgba(148, 163, 184, .35);
+}
+.stats-label{
+    display: block;
+    font-size: 0.75;
+    color: #9ca3af;
+}
+.stats-value{
+    display: block;
+    color: #fff;
+    margin-top: 4px;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+.card-table{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+thead{
+    background:#020617 ;
+}
+th,td{
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #1f2937;
+}
+tbody tr:nth-child(even){
+    background: rgba(15, 23, 42, 0.7);
+}
+tbody tr:hover{
+    background: rgba(148, 163, 184, 0.15);
+}
+.chart-card{
+    min-height: 260px;
+}
+.action-btn{
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: #fe4444;
+    color: #f9fafb;
+}
+.action-btn:hover{
+    background-color: #b91c1c;
+}
+
+.error{
+    color: #b91c1c;
+    margin-top: 8px;
+    min-height: 20px;
+    font-size: 0.9rem;
+}

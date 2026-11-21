@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Dasboard des reservations</h1>
+            <p>Mini application javascript</p>
+        </header>
+
+        <section class="top-section">
+            <div class="card card-form">
+                <h2>nouvelle reservation</h2>
+                <div class="form">
+                    <input type="text" placeholder="nom du client" id="client">
+                    <input type="date" id="date">
+                    <input type="number" placeholder="nombre de nuits" id="nights">
+                    <button id="add">Ajouter</button>
+                    <p id="error" class="error"></p>
+
+                </div>
+            </div>
+
+            <div class="card stats-card">
+                <h2>Statisques</h2>
+                <div class="stats-grid">
+                    <div class="stats-item">
+                        <span class="starts-label">total-reservation</span>
+                        <span class="stats-value" id="total-reservation">0</span>
+                    </div>
+                    <div class="stats-item">
+                        <span class="starts-label">total Nuits</span>
+                        <span class="stats-value" id="total-nights">0</span>
+                    </div>
+                    <div class="stats-item">
+                        <span class="label">moy Nuit/res</span>
+                        <span class="stats-value" id="avg-nights">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-section">
+            <div class="card card-table">
+                <div class="card-header">
+                    <h2>Liste des reservations</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Client</th>
+                            <th>Date</th>
+                            <th>Nuit</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="car chart-card">
+                <div class="card-header">
+                    <h2>Graphique:Nuit/Client</h2>
+
+                </div>
+            </div>
+
+        </section>
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
